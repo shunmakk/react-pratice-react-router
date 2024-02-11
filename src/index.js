@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import routeBasic from './8-1/routesBasic';
+import { RouterProvider } from 'react-router-dom';
+import RoutesLink from './8-2/Routeslink';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <RouterProvider router={routeBasic}/> */}
+    <RouterProvider router={RoutesLink}/>
+    
   </React.StrictMode>
 );
 

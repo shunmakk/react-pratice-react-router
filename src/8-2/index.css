@@ -1,0 +1,16 @@
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1440px;   
+}
+
+
+
+li{
+    list-style-type: none;
+}
+
+.isCurrent{
+    color: black;
+}
