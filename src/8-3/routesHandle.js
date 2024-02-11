@@ -12,15 +12,18 @@ const routeshandle = createBrowserRouter(
     createRoutesFromElements(
         <Route element={<RouterParam/>}>
          <Route path="/" element={<TopPage/>} handle={{
-             title: 'トップページ',
+             title: '改訂3版JavaScript本格入門',
              keywords: 'React, javascript',
              description: 'トップページの紹介です。'
          }} />
         <Route path="/book/:isbn?" element={<BookPage/>} handle={{
             title: '書籍情報 - %s',
             keywords: 'React - %s',
-            
+            description: '%s'
+
         }} />
         </Route>
     ) 
 )
+
+export default  routeshandle

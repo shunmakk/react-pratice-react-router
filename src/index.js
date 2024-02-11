@@ -6,13 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from 'react-router-dom';
 // import RoutesLink from './8-2/Routeslink';
 import routesParam from './8-3/routesParam';
+import routeshandle from './8-3/routesHandle';
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <RouterProvider router={routeBasic}/> */}
     {/* <RouterProvider router={RoutesLink}/> */}
-    <RouterProvider router={routesParam}/>
+    {/* <RouterProvider router={routesParam}/> */}
+    <HelmetProvider>
+      <RouterProvider router={routeshandle}/>
+    </HelmetProvider>
+
   </React.StrictMode>
 );
 
