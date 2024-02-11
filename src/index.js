@@ -4,14 +4,15 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import routeBasic from './8-1/routesBasic';
 import { RouterProvider } from 'react-router-dom';
-import RoutesLink from './8-2/Routeslink';
+// import RoutesLink from './8-2/Routeslink';
+import routesParam from './8-3/routesParam';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <RouterProvider router={routeBasic}/> */}
-    <RouterProvider router={RoutesLink}/>
-    
+    {/* <RouterProvider router={RoutesLink}/> */}
+    <RouterProvider router={routesParam}/>
   </React.StrictMode>
 );
 
